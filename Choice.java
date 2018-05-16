@@ -191,7 +191,7 @@ public class Choice extends Application {
 
     // Abimeetodid erinevate nuppude sündmuste loomiseks.
 
-    // sündmus, millega liikuda tagasi mingile eelnevale lehele.
+    // sündmus, millega liikuda tagasi mingile eelnevale lehele, uurides logifailist kas mängija on sel lehel juba käinud.
     private void btnBack(BufferedWriter writer, Scene scene, Page pageTo, Page pageFrom) {
         try {
             writer.append(pageFrom.getRight().getText().toLowerCase()).append("\n");
